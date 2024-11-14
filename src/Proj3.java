@@ -224,8 +224,8 @@ public class Proj3 {
                 swapCount = bubbleSort(dataList, dataList.size());
                 long endTime = System.nanoTime();
                 long Runtime = endTime - startTime;
-                System.out.println("Sorted data bubble sort run time: " + Runtime);
-                writeToFile( "Sorted data bubble sort run time: " + String.valueOf(Runtime), "./analysis.txt");
+                System.out.println("Sorted data bubble sort running time: " + Runtime);
+                writeToFile( "Sorted data bubble sort running time: " + String.valueOf(Runtime), "./analysis.txt");
                 writeToFile("\n", "./analysis.txt");
                 System.out.println("# of swaps: " + swapCount);
                 writeToFile( "# of swaps: " + String.valueOf(swapCount), "./analysis.txt");
