@@ -1,4 +1,4 @@
-/**************************
+/*************************
  ∗ @file: Proj3.java
  ∗ @description: This program implements This program implements 5 different sorting
  algorithms (Merge, Quick, Heap, Bubble, & Odd-Even Transposition) to analyze and
@@ -6,7 +6,7 @@
  conditions (sorted, shuffled, & reversed data).
  ∗ @author: Aashi Patel
  ∗ @date: November 14, 2024
- ************************/
+ ***********************/
 
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
