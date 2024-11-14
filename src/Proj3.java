@@ -1,3 +1,13 @@
+/**************************
+        ∗ @file: Proj3.java
+        ∗ @description: This program implements This program implements 5 different sorting
+            algorithms (Merge, Quick, Heap, Bubble, & Odd-Even Transposition) to analyze and
+            compare their performance on a Taylor Swift discography dataset under different
+            conditions (sorted, shuffled, & reversed data).
+        ∗ @author: Aashi Patel
+        ∗ @date: November 14, 2024
+ ************************/
+
 import com.sun.source.util.TaskListener;
 
 import java.io.BufferedWriter;
@@ -193,32 +203,17 @@ public class Proj3 {
                 }
             inputFileNameScanner.close();
 
-//            // print data before sorting
-//            System.out.println("Sorted dataset before operations: ");
-//            Collections.sort(dataList);
-//            try(FileWriter writer = new FileWriter("./sorted.txt")) {
-//                writer.write("Sorted dataset before operations: ");
-//                writer.write(".\n");
-//                for (Taylor_Discography_Data data : dataList) {
-//                    writer.write(String.valueOf(data));
-//                    writer.write(".\n");
-//                }
-//            }
-
-//            // Sort and time dataset with different orderings
-//            for (String ordering : new String[]{"sorted", "shuffled", "reversed"}) {
-//                // Create a new copy of the data each time
-//                ArrayList<Taylor_Discography_Data> dataForSort = new ArrayList<>(dataForSort);
-//
-//                if ("sorted".equals(ordering)) {
-//                    Collections.sort(dataForSort);
-//                } else if ("shuffled".equals(ordering)) {
-//                    Collections.shuffle(dataForSort);
-//                } else if ("reversed".equals(ordering)) {
-//                    Collections.sort(dataForSort, Collections.reverseOrder());
-//                }
-
-              //  int comparisons = 0;
+            // print data before sorting
+            System.out.println("Sorted dataset before operations: ");
+            Collections.sort(dataList);
+            try(FileWriter writer = new FileWriter("./sorted.txt")) {
+                writer.write("Sorted dataset before operations: ");
+                writer.write(".\n");
+                for (Taylor_Discography_Data data : dataList) {
+                    writer.write(String.valueOf(data));
+                    writer.write(".\n");
+                }
+            }
 
             //Choose and execute the sorting algorithm
             int swapCount = 0;
@@ -410,42 +405,7 @@ public class Proj3 {
                     System.err.println("Error: Invalid sorting algorithm.");
                     System.exit(1);
         }
-                //long elapsedTime = System.nanoTime() - startTime;
-            }
-
-    // Loads dataset with the specified number of lines
-//    public static ArrayList<Taylor_Discography_Data> loadDataset(String filename, ArrayList<Taylor_Discography_Data> data, int numLines) throws IOException {
-//        try (Scanner scanner = new Scanner(new FileInputStream(filename))) {
-//            // Skip header line (header)
-//            if (scanner.hasNextLine()) {
-//                scanner.nextLine();
-//            }
-//            int count = 0;
-//            while (scanner.hasNextLine() && count < numLines) {
-//                String line = scanner.nextLine().trim();
-//                if (line.isEmpty()) continue;
-//
-//            // Read specified number of lines
-//                String[] parts = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)"); // Split CSV while respecting quotes
-//
-//                if (parts.length < 7) {
-//                    System.err.println("Incomplete data at line: " + line);
-//                    continue;
-//                }
-//                // Create a Taylor_Discography_Data object
-//                Taylor_Discography_Data data = new Taylor_Discography_Data(
-//                        parts[0].trim(),                     // album
-//                        parts[1].trim(),                     // track_title
-//                        Integer.parseInt(parts[2].trim()),   // track_number
-//                        parts[3].trim(),                     // released_year
-//                        parts[4].trim(),                     // lyrics
-//                        parts[5].trim(),                     // writers
-//                        parts[6].trim()                      // spotifyId
-//                );
-//
-//        }
-//    }
-
+    }
 
     //implement the writeToFile path.
     public static void writeToFile(String content, String filePath) {
