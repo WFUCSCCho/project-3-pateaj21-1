@@ -93,20 +93,26 @@ second command line argument. After several runs, your `analysis.txt` file will 
 
 Using your favorite graphing software (e.g., MS Excel or Google Sheets), plot the running time (in seconds) or number of 
 vs. N for each case. Take a screenshot of your graph and put them here by modifying this file, committing, and pushing 
-it to this repository.
+it to this repository.<img width="596" alt="Screen Shot 2024-11-26 at 7 47 20 PM" src="https://github.com/user-attachments/assets/d8b72174-2514-46ef-924d-c1a8574347b7">
+
 
 Bubble Sort, Merge Sort, Quick Sort, and Heap Sort running time (already sorted):
-![image](https://github.com/user-attachments/assets/76f103c8-8c02-4bec-9966-99568f2effb6)
+<img width="598" alt="Screen Shot 2024-11-26 at 7 48 35 PM" src="https://github.com/user-attachments/assets/bf37424b-6326-43e6-be5c-ad7fe8c088e0">
 
 Bubble Sort, Merge Sort, Quick Sort, and Heap Sort running time (shuffled):
+<img width="603" alt="Screen Shot 2024-11-26 at 7 48 53 PM" src="https://github.com/user-attachments/assets/1640fa9a-5e8b-45f8-995a-fd42e761fbc7">
 
 Bubble Sort, Merge Sort, Quick Sort, and Heap Sort running time (reversed):
+<img width="599" alt="Screen Shot 2024-11-26 at 7 49 18 PM" src="https://github.com/user-attachments/assets/19e984ec-7cf0-4b0d-8c5a-87088efa8112">
 
 Bubble Sort and Odd-Even Transposition Sort comparison (already sorted):
+<img width="600" alt="Screen Shot 2024-11-26 at 7 49 44 PM" src="https://github.com/user-attachments/assets/15e91c56-bc90-485f-814c-ebd2842d1d79">
 
 Bubble Sort and Odd-Even Transposition Sort comparison (shuffled):
+<img width="597" alt="Screen Shot 2024-11-26 at 7 50 00 PM" src="https://github.com/user-attachments/assets/f797853f-e535-41fe-a9f9-c9969543f4cb">
 
 Bubble Sort and Odd-Even Transposition Sort comparison (reversed):
+<img width="598" alt="Screen Shot 2024-11-26 at 7 50 15 PM" src="https://github.com/user-attachments/assets/dbc35d86-3d95-47f2-80df-27582be9d1dd">
 
 ## Submission:
 
